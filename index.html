@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Sederhana</title>
+    <style>
+        /* CSS Dasar untuk membuat tampilan lebih rapi */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #34495e;
+            display: flex;
+            justify-content: center;
+            padding: 0.8rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #1abc9c;
+        }
+        main {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 30px auto;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #1abc9c;
+            padding-bottom: 5px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box; /* Memastikan padding tidak merusak lebar */
+        }
+        button {
+            background-color: #1abc9c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #16a085;
+        }
+        footer {
+            text-align: center;
+            padding: 1.5rem 0;
+            background-color: #2c3e50;
+            color: white;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Bagian Header Website -->
+    <header>
+        <h1>Website Sederhana</h1>
+        <p>Belajar struktur dasar HTML dengan mudah</p>
+    </header>
+
+    <!-- Bagian Navigasi Menu -->
+    <nav>
+        <a href="#beranda">Beranda</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+
+    <!-- Bagian Konten Utama -->
+    <main>
+        <!-- Seksi Beranda -->
+        <section id="beranda">
+            <h2>Selamat Datang</h2>
+            <p>Halo! Ini adalah contoh kerangka website dasar. Website ini dibuat hanya menggunakan satu buah file HTML. Pengaturan desain seperti warna, margin, dan ukuran teks dilakukan dengan CSS yang disisipkan langsung di dalam tag <code>&lt;style&gt;</code>.</p>
+        </section>
+
+        <!-- Seksi Tentang -->
+        <section id="tentang">
+            <h2>Tentang Pembuatan Web</h2>
+            <p>Membuat website dengan HTML murni adalah langkah pertama yang paling penting bagi pemula. Beberapa tag dasar (semantik) yang digunakan pada website ini antara lain:</p>
+            <ul>
+                <li><code>&lt;header&gt;</code>: Untuk kepala atau judul halaman.</li>
+                <li><code>&lt;nav&gt;</code>: Untuk membuat menu navigasi.</li>
+                <li><code>&lt;main&gt;</code>: Untuk membungkus konten utama.</li>
+                <li><code>&lt;section&gt;</code>: Untuk membagi konten menjadi beberapa bagian.</li>
+                <li><code>&lt;footer&gt;</code>: Untuk catatan kaki halaman.</li>
+            </ul>
+        </section>
+
+        <!-- Seksi Kontak / Formulir -->
+        <section id="kontak">
+            <h2>Hubungi Kami</h2>
+            <p>Ini adalah contoh formulir HTML murni. Anda dapat mengisinya dan melihat tampilannya.</p>
+            
+            <form action="#" method="get">
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap:</label>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Alamat Email:</label>
+                    <input type="email" id="email" name="email" placeholder="contoh@email.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="pesan">Pesan Anda:</label>
+                    <textarea id="pesan" name="pesan" rows="4" placeholder="Tuliskan pesan Anda di sini..." required></textarea>
+                </div>
+                
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Bagian Footer Website -->
+    <footer>
+        <p>&copy; 2026 Website Sederhana. Dibuat dengan HTML.</p>
+    </footer>
+
+</body>
+</html>
